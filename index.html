@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="multipart" href="CSS/style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <section>
+        <h2>Blank Login</h2>
+        <div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Login</legend><br>
+                    <label for="login">Username</label>
+                    <input placeholder="my@mail.com" type="text" id="login" name="username"><br><br>
+                    <label for="">Password</label>
+                    <input placeholder="********" type="password" id="pass" name="password"><br><br>
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+            <h2>Registration Form</h2>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Registration</legend><br>
+                    <label for="username">Name</label>
+                    <input placeholder="name" type="text" name="name" id="username"><br><br>
+                    <label for="email">Email</label>
+                    <input placeholder="my@mail" type="email" name="Email" id="email"><br><br>
+                    <label for="password">Password</label>
+                    <input placeholder="********" type="password" name="password" id="password"><br><br>
+                    <label for="repeat">Repeat Password</label>
+                    <input placeholder="********" type="password" name="password" id="password"><br><br>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date"><br><br>
+                    <label for="avatar">Add avatar</label>
+                    <input type="file" name="file" id="avatar"><br><br>
+                    <fieldset>
+                        <legend>Select your gender</legend><br>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="other">Other</label>
+                        <input type="radio" name="gender" id="other"><br><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Select language which you know</legend><br>
+                        <label for="html">html</label>
+                        <input type="checkbox" name="language" id="html">
+                        <label for="css">css</label>
+                        <input type="checkbox" name="language" id="css">
+                        <label for="js">js</label>
+                        <input type="checkbox" name="language" id="js">
+                        <label for="other">other</label>
+                        <input type="checkbox" name="language" id="other"><br><br>
+                    </fieldset><br>
+                    <label for="select">Select your experience</label>
+                    <select name="low" id="select">
+                        <option value="low">Low</option>
+                        <option value="middle">Middle</option>
+                        <option value="hight">Hight</option>
+                    </select><br><br>
+                    <label for="text_area">About</label><br><br>
+                    <textarea placeholder="Describe yourself like a person" name="text" id="text_area" cols="50" rows="10"></textarea><br><br>
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+            <h2>Ordering food</h2>
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Buying details</legend><br>
+                    <label for="first_name">First name*</label>
+                    <input type="text" name="name" id="first_name"><br><br>
+                    <label for="last_name">Last name*</label>
+                    <input type="text" name="name" id="last_name"><br><br>
+                    <label for="email">Email*</label>
+                    <input placeholder="my@mail.com" type="email" name="@mail" id="email"><br><br>
+                    <label for="mobile">Mobile number*</label>
+                    <input placeholder="+380000000000" type="tel" name="number" id="mobile"><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Address</legend><br>
+                    <label for="city">City*</label>
+                    <input type="text" name="city" id="city"><br><br>
+                    <label for="street">Street*</label>
+                    <input placeholder="Name of street" type="street" name="street" id="street"><br><br>
+                    <label for="street">Street number*</label>
+                    <input placeholder="Number of street" type="number" name="number" id="street"><br><br>
+                    <label for="flat">Flat</label>
+                    <input placeholder="Flat" type="number" name="number" id="flat"><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Pay options</legend><br>
+                    <div>
+                        <span>Pay type</span>
+                    </div><br>
+                    <label for="cash">Cash</label>
+                    <input type="radio" name="type_pay" id="cash"><br><br>
+                    <label for="card">Credit card</label>
+                    <input type="radio" name="type_pay" id="card"><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Add optionals</legend><br>
+                    <input type="checkbox" name="create" id="account">
+                    <label for="account">Create an account?</label><br><br>
+                    <label for="notes">Notes</label><br><br>
+                    <textarea placeholder="Enter notes about delivery or food" name="text" id="notes" cols="50" rows="10"></textarea><br>
+                </fieldset><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
