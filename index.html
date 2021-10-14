@@ -16,6 +16,7 @@
                     <legend>Login</legend><br>
                     <label for="login">Username</label>
                     <input placeholder="my@mail.com" type="text" id="login" name="username"><br><br>
+                    <!-- 1. label's for attribute and input's id attribute should have the same value. In your case it's "" and "pass" which is wrong. Should have been "password" instead. -->
                     <label for="">Password</label>
                     <input placeholder="********" type="password" id="pass" name="password"><br><br>
                     <button type="submit">Send</button>
@@ -28,10 +29,12 @@
                     <label for="username">Name</label>
                     <input placeholder="name" type="text" name="name" id="username"><br><br>
                     <label for="email">Email</label>
+                    <!-- 2. Don't name attribute values starting with capital letter. 'email' is preferable to 'Email'. -->
                     <input placeholder="my@mail" type="email" name="Email" id="email"><br><br>
                     <label for="password">Password</label>
                     <input placeholder="********" type="password" name="password" id="password"><br><br>
                     <label for="repeat">Repeat Password</label>
+                    <!-- 3. Duplicate 'id' value. You already have id="password" above. Should have been 'repeat_password' instead. The corresponding label should have had the same value. -->
                     <input placeholder="********" type="password" name="password" id="password"><br><br>
                     <label for="date">Date</label>
                     <input type="date" name="date" id="date"><br><br>
@@ -71,6 +74,7 @@
             <h2>Ordering food</h2>
             <form action="" method="post" enctype="multipart/form-data">
                 <fieldset>
+                    <!-- 4. There's a lot of required fields, but you are not requiring the user to type them. I can submit the form without typing any values which is wrong. -->
                     <legend>Buying details</legend><br>
                     <label for="first_name">First name*</label>
                     <input type="text" name="name" id="first_name"><br><br>
